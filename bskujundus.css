@@ -1,0 +1,241 @@
+/* 8ldtaust */
+
+body {
+  background-color: #FAE9DD !important;
+}
+
+/* gridi kastid */
+
+.thumbnail {
+  /*-moz-box-shadow:    5px 3px 10px 3px #A3A3A3;
+  -webkit-box-shadow: 5px 3px 10px 3px #A3A3A3;
+  box-shadow:         5px 3px 10px 3px #A3A3A3;
+  background-color: #828282;*/
+}
+
+/* 8lemine riba */
+
+.pull-right {
+  margin-top: 20px;
+  margin-bottom: 20px;
+}
+
+.pull-left{
+  margin-top: 20px;
+  margin-bottom: 20px;
+}
+
+/* banneri osa*/
+
+.jumbotron {
+  background-image:url('img/jumbotron-bg.png');
+  height: 500px;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.jumbotron .container {
+  position: relative;
+  top:100px;
+}
+
+.jumbotron h1 {
+  color: #fff;
+  font-size: 48px; 
+  font-weight: bold;
+  font-family: Calibri;
+  display: inline;
+}
+
+.jumbotron p {
+  font-size: 20px;
+  color: #fff;
+  font-family: Calibri;
+  display: inline;
+}
+
+.jumbotron img {
+  display: inline;
+}
+
+/* lehekülgede pealkirjad */
+
+.page-header {
+  padding: 20px 20px 20px 20px;
+  text-align: center;
+  color: #1B667A;
+  font-family: Calibri;
+}
+
+.page-header h3 {
+  font-size: 20px;
+}
+
+/* pildi animatsioon */
+
+.animated { 
+        -webkit-animation-duration: 1s; 
+        animation-duration: 1s; 
+        -webkit-animation-fill-mode: both; 
+        animation-fill-mode: both; 
+    } 
+
+@-webkit-keyframes wiggle { 
+        0% { -webkit-transform: skewX(9deg); } 
+        10% { -webkit-transform: skewX(-8deg); } 
+        20% { -webkit-transform: skewX(7deg); } 
+        30% { -webkit-transform: skewX(-6deg); } 
+        40% { -webkit-transform: skewX(5deg); } 
+        50% { -webkit-transform: skewX(-4deg); } 
+        60% { -webkit-transform: skewX(3deg); } 
+        70% { -webkit-transform: skewX(-2deg); } 
+        80% { -webkit-transform: skewX(1deg); } 
+        90% { -webkit-transform: skewX(0deg); } 
+        100% { -webkit-transform: skewX(0deg); } 
+    } 
+@keyframes wiggle { 
+        0% { transform: skewX(9deg); } 
+        10% { transform: skewX(-8deg); } 
+        20% { transform: skewX(7deg); } 
+        30% { transform: skewX(-6deg); } 
+        40% { transform: skewX(5deg); } 
+        50% { transform: skewX(-4deg); } 
+        60% { transform: skewX(3deg); } 
+        70% { transform: skewX(-2deg); } 
+        80% { transform: skewX(1deg); } 
+        90% { transform: skewX(0deg); } 
+        100% { transform: skewX(0deg); } 
+    } 
+.wiggle:hover { 
+        -webkit-animation-name: wiggle; 
+        animation-name: wiggle; 
+        -webkit-animation-timing-function: ease-in; 
+        animation-timing-function: ease-in; 
+    } 
+.animated.wiggle:hover { 
+        -webkit-animation-duration: 0.75s; 
+        animation-duration: 0.75s; 
+    }
+
+/* 8lemise riba lingid */
+
+.nav a {
+  color: #1B667A;
+  font-size: 18px;
+  font-weight: bold;
+  margin: 20px 20px 20px 20px;
+  font-family: Calibri;
+  padding: 1px 5px 1px 5px;
+  border-radius: 5%;
+}
+
+.nav li {
+  display: inline;
+}
+
+/* koodi tekst */
+
+.kooditekst {
+  font-family: "Courier New", Courier, monospace;
+  color: white;
+  word-break: break-all;
+}
+
+.kood {
+width: 70%;
+margin: auto;
+}
+
+a:hover {
+    color: #FAE9DD;
+    text-decoration: none;
+    background-color: #1B667A;
+}
+
+/* Grow Rotate */
+.grow-rotate {
+display: inline-block;
+-webkit-transition-duration: 0.3s;
+transition-duration: 0.3s;
+-webkit-transition-property: transform;
+transition-property: transform;
+-webkit-transform: translateZ(0);
+transform: translateZ(0);
+box-shadow: 0 0 1px rgba(0, 0, 0, 0);
+}
+.grow-rotate:hover, .grow-rotate:focus, .grow-rotate:active {
+-webkit-transform: scale(1.1) rotate(4deg);
+transform: scale(1.1) rotate(4deg);
+}
+
+/* mwuSlider */
+.wmuSlider {
+    position: relative;
+    overflow: hidden;
+}
+.wmuSlider .wmuSliderWrapper {
+    display: none;
+}
+.wmuSlider .wmuSliderWrapper article {
+    position: relative;
+    text-align: center;
+}
+.wmuSlider .wmuSliderWrapper article img {
+    max-width: 100%;
+    width: auto;
+    height: auto;
+}
+
+/* mwuGallery */
+.wmuGallery .wmuGalleryImage {
+    position: relative;
+    text-align: center;
+}
+.wmuGallery .wmuGalleryImage img {
+    max-width: 100%;
+    width: auto;
+    height: auto;
+}
+
+/* Default Skin */
+.wmuGallery .wmuGalleryImage {
+    margin-bottom: 10px;
+}
+.wmuSliderPrev, .wmuSliderNext {
+    position: absolute;
+    width: 40px;
+    height: 80px;
+    text-indent: -9999px;
+    background: url(../images/sprites.png) no-repeat 0 0;
+    top: 50%;
+    margin-top: -40px;
+    z-index: 2;
+}
+.wmuSliderPrev {
+    background-position: 100% 0;
+    left: 20px;
+}
+.wmuSliderNext {
+    right: 20px;
+}
+.wmuSliderPagination {
+    z-index: 2;
+    position: absolute;
+    left: 20px;
+    bottom: 10px;
+}
+.wmuSliderPagination li {
+    float: left;
+    margin: 0 5px 0 0;
+    list-style-type: none;
+}
+.wmuSliderPagination a {
+    display: block;
+    text-indent: -9999px;
+    width: 10px;
+    height: 10px;
+    background: url(../images/sprites.png) no-repeat 0 -80px;
+}
+.wmuSliderPagination a.wmuActive {
+    background-position: -10px -80px;
+}

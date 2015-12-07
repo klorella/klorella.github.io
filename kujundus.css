@@ -1,0 +1,26 @@
+/* 8lemise riba lingid */
+
+.nav a {
+  color: #1B667A;
+  font-size: 16px;
+  font-weight: bold;
+  padding: 20px 20px 20px 20px;
+  font-family: calibri;
+}
+
+.nav li {
+  display: inline;
+}
+
+/* koodi tekst */
+
+.kooditekst {
+  font-family: "Courier New", Courier, monospace;
+  color: white;
+  word-break: break-all;
+}
+
+.kood {
+width: 70%;
+margin: auto;
+}
